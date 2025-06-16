@@ -1,9 +1,6 @@
-import { useNavigate } from "react-router-dom";
 import { HeaderButton, HeaderContainer, HeaderLogo, HeaderObject } from "../../Style/Styles";
 
 const Header = () => {
-  const navi = useNavigate();
-
   return (
     <>
         <HeaderContainer>
@@ -19,7 +16,8 @@ const Header = () => {
             </HeaderObject>
 
             <HeaderButton>
-                로그인
+                <ul><a href='/chat/:roomId'>로그인</a></ul>
+                <ul><a href='/chat/:roomId'>회원가입</a></ul>
             </HeaderButton>
         </HeaderContainer>
     </>
