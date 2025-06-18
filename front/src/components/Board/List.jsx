@@ -34,7 +34,7 @@ const List = () => {
 
     return(
         <>
-            <h2>보기 화면</h2>
+            <h2>보기 화면</h2>            
 
             {
                 entity.length === 0 ? <div>작성된 글이 없습니다</div>

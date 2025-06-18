@@ -1,6 +1,10 @@
-import { FooterContainer, FooterCopyright } from "../../Style/Styles";
+import { FooterContainer, FooterCopyright, FooterPrivacy } from "../../Style/Styles";
 
 const Footer = () => {
+
+    const id = "user1234";
+    const password = "password1234";
+    
   return (
     <>
         <FooterContainer>
@@ -8,9 +12,17 @@ const Footer = () => {
             <FooterCopyright className="copyright">
                 <p>© 2025 Positivus. All Rights Reserved.</p>
 
-                <a href="/privacy" className="privacy">
+                {/* 새 창 열기 */}
+                <FooterPrivacy className="privacy"
+                    onClick={() => {
+                        window.open(
+                            '/privacy',
+                            '_blank',
+                        );
+                    }}
+                >
                     Privacy Policy
-                </a>
+                </FooterPrivacy>
             </FooterCopyright>
         </FooterContainer>
     </>

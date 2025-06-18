@@ -16,8 +16,8 @@ const Header = () => {
             </HeaderObject>
 
             <HeaderButton>
-                <ul><a href='/chat/:roomId'>로그인</a></ul>
-                <ul><a href='/chat/:roomId'>회원가입</a></ul>
+                <ul><a href='/login'>로그인</a></ul>
+                <ul><a href='/join'>회원가입</a></ul>
             </HeaderButton>
         </HeaderContainer>
     </>
